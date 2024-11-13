@@ -1,0 +1,138 @@
+/*video page*/
+.thumbnails{
+    width:100%
+ }
+
+ .vidtitle{
+     display: inline-block;
+     width: 220px;margin-left: 10px;
+     margin-top: 8px;
+     margin-bottom: 1px;
+     color: black;
+     width: 230px;
+     font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-style: normal;}
+
+ .vidchannel,.vidstats{
+     opacity: 1;
+     width: 200px;
+     opacity: 0.6;
+     vertical-align: top;
+     margin-left: 50px;
+     margin-top: 3px;
+     margin-bottom: 2px;
+     font-size: 12px;
+     color: rgb(0, 0, 0);
+     font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-style: normal;
+ }
+ .vid{
+     width: 300px;
+     display:inline-block;
+     vertical-align:top;
+     margin-right: 15px;
+    
+ }
+ .vid2{
+     width: 300px;
+     display:inline-block;
+     vertical-align:top;
+     margin-right: 15px;
+     }
+ .chpic{
+     display: inline-block;
+     width:35px;
+     margin-top: 10px;
+     margin-left: 2px;
+     cursor: pointer;
+     border-radius: 80px;
+ 
+
+ }
+ .fr{display: inline-block; grid-template-columns: 300px 300px 300px;}
+ .chpic,.vidtitle{
+     vertical-align:top;
+ }
+ .lay2{
+     margin-bottom: 20px;
+     vertical-align: top;
+ }
+ .dot{margin-right: 1px;cursor: pointer;
+     color:black;display: inline-block;
+ } 
+ .dot:hover{
+     opacity: 1;
+ }
+ .vid-grid{
+     display:grid; grid-template-columns: 1200px;
+     padding-top: 65px;
+     padding-left: 50px;
+    
+ }
+ .timestamp{}
+ 
+ /*header page*/
+ .header{
+    height:65px;
+    background-color: white;
+   width:100%;
+   margin-top: -9px;
+    display:flex; flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+   
+ }
+ .firstsection{
+    background-color: white;
+    width:150px; display:flex
+ }
+ .midsection{
+    display: flex;
+    align-items: center;
+    flex:1;
+    margin-left:70px;
+    max-width:500px; 
+    margin-right:35px;
+ }
+ .endsection{
+    background-color: white;
+    width:200px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+    flex-shrink: 0;
+ }
+ .searchbox{
+    flex:1;
+    max-width: 350px;height:26px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: rgb(162, 158, 158);
+    border-radius: 15px;
+    box-shadow: inset 10px 20px 5px
+    rgba(0,0,0,0.05);
+ }
+ 
+ .searchbox::placeholder{
+    font-family: Roboto,Arial; font-size: 13px;
+
+ }
+ .sbutton{margin-left:-24px ;background-color: , Firefox 1, Safari 1, Chro;
+    height:30px ;border-width: 1px;border-style: solid;
+    border-color:rgb(162, 158, 158);
+    border-radius: 15px;width: 40px; margin-right:10px;
+    cursor: pointer;}
+
+.vbutton{
+    border-width: 1px;border-color: white;border; 
+    border-radius:20px; border:none; cursor: pointer;
+}
+.sidebar{position: fixed;
+left:0;bottom: 0;top:64px;background-color: white;}
