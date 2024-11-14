@@ -90,7 +90,7 @@ font-style: normal;
  
  /*header page*/
  .header{
-    height:65px;
+    height:65px;margin-left: -9px;
     background-color: white;
    width:100%;
    margin-top: -9px;
@@ -98,11 +98,11 @@ font-style: normal;
     justify-content: center;
     justify-content: space-between;
     position: fixed;
-    z-index: 1;
+    z-index: 1;border-color: rgb(199, 199, 199);border-width: 1px;border-style:groove;
    
  }
  .firstsection{
-    background-color: white;
+    background-color: white;padding-left: 5px;
     width:200px; display:flex
  }
  .midsection{
@@ -156,7 +156,10 @@ font-style: normal;
     position:absolute; background-color: rgb(214, 0, 0);color:white;
     border-radius: 16px;padding-left: 5px;font-size: 11px;
     padding-right: 5px;padding-top: 2px;padding-bottom: 1px;
-    top:-2px;right:-3px;
+    top:-2px;right:-3px;opacity: .7;
+}
+.noti:hover .noticount{
+    opacity: 1;transition: 0.5s;
 }
 .sidebar{position: fixed;width: 60px;
 left:0;bottom: 0;top:64px;background-color: white;
@@ -192,7 +195,7 @@ left:0;bottom: 0;top:64px;background-color: white;
     cursor: pointer;
 }
 .stext{
-    cursor:none;
+    cursor:default;
 }
 .youtube2{
     position:relative;margin-top: 20px;
