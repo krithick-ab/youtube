@@ -1,6 +1,7 @@
 /*video page*/
 .thumbnails{
     width:100%
+
  }
 
  .vidtitle{
@@ -67,11 +68,25 @@ font-style: normal;
  }
  .vid-grid{
      display:grid; grid-template-columns: 1200px;
-     padding-top: 65px;
-     padding-left: 50px;
+     padding-top: 80px;
+     padding-left: 100px;background-color: rgb(242, 242, 242);
     
  }
- .timestamp{}
+ .thumbnailstamp{
+    position:relative;
+ }
+ .timestamp{
+    font-family: roboto,arial ;
+    font-size: 12px;
+    font: weigth 500px;
+    padding-left: 2px;padding-right: 2px;
+    border-radius:2px;
+    background-color: black;
+    color:white;
+    display: inline;
+    position: absolute;
+    bottom:10px; right:8px;
+ }
  
  /*header page*/
  .header{
@@ -88,7 +103,7 @@ font-style: normal;
  }
  .firstsection{
     background-color: white;
-    width:150px; display:flex
+    width:200px; display:flex
  }
  .midsection{
     display: flex;
@@ -128,11 +143,67 @@ font-style: normal;
     height:30px ;border-width: 1px;border-style: solid;
     border-color:rgb(162, 158, 158);
     border-radius: 15px;width: 40px; margin-right:10px;
-    cursor: pointer;}
+    cursor: pointer;position:relative;}
 
 .vbutton{
     border-width: 1px;border-color: white;border; 
     border-radius:20px; border:none; cursor: pointer;
 }
-.sidebar{position: fixed;
-left:0;bottom: 0;top:64px;background-color: white;}
+.noti{
+    position:relative;
+}
+.noticount{
+    position:absolute; background-color: rgb(214, 0, 0);color:white;
+    border-radius: 16px;padding-left: 5px;font-size: 11px;
+    padding-right: 5px;padding-top: 2px;padding-bottom: 1px;
+    top:-2px;right:-3px;
+}
+.sidebar{position: fixed;width: 60px;
+left:0;bottom: 0;top:64px;background-color: white;
+}
+.sidebar-link{
+    height: 106px;display: flex;justify-content: center;
+    align-items: center;
+}
+.sidebar-link:hover{
+    background-color: rgb(237, 236, 236);opacity: 1.0;
+}
+.sidebar-link img{
+    width: 30px;
+}
+.sidebar-link{
+    font-family: roboto, arial;
+    font-size: 10px;display: flex;
+    flex-direction: column; 
+}
+.tooltip{
+    position:absolute;background-color: gray;color:white;
+    font-size: 10px;border-radius: 2px;padding-left: 3px;
+    padding-right: 3px;opacity: 0;margin-top: 10px;
+    margin-left: -2px;
+}
+.sbutton:hover .tooltip{
+    opacity: 1;transition: 0.6s;
+}
+.vbutton:hover .tooltip{
+    opacity: 1;transition: 0.6s;
+}
+.sidimg{
+    cursor: pointer;
+}
+.stext{
+    cursor:none;
+}
+.youtube2{
+    position:relative;margin-top: 20px;
+}
+.youtube{
+    font-size: 09px;position:absolute;margin-top: 18px;
+    background-color:black;padding-left: 2px;color:white;
+    padding-right: 2px;padding-top: 2px;padding-bottom: 2px;
+    opacity: 0;
+
+}
+.youtube2:hover .youtube{
+    opacity:0.5;transition: 1s;
+}
